@@ -1,0 +1,20 @@
+body {
+    background-image: url('/assets/img/halftone-yellow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+.devoured {
+    color: #888;
+}
+
+.devouredLi {
+    padding: 0.25rem;
+}
+
+
+

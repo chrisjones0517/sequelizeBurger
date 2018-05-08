@@ -1,0 +1,29 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This app demos the use of express-handlebars and mySQL in the node environment.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjones0517/burger.git"
+  },
+  "author": "Chris Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisjones0517/burger/issues"
+  },
+  "homepage": "https://github.com/chrisjones0517/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
+  }
+}
