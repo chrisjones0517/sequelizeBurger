@@ -29,6 +29,7 @@ router.post('/', (req, res) => {
         .catch(err => {
             if (err) {
                 errors.push(err.errors[0].message);
+                res.redirect('/');
             }
         })
         .then(() => {
