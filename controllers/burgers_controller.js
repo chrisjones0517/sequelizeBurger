@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
                 burgers: data,
                 errors: errors
             };
-            
+
             res.render('index', dataObject);
             errors = [];
         });
@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
     errors = [];
     db.burger.create({
         burger_name: req.body.burgerInput,
-        createdBy: req.body.nameInput,
+        createdBy: req.body.nameInput
     })
         .catch(err => {
             if (err) {

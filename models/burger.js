@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
         eatenBy: DataTypes.STRING
     }, {});
     Burger.associate = function (models) {
+        Burger.belongsTo(models.customer);
         // associations can be defined here
     };
     return Burger;
