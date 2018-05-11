@@ -3,9 +3,9 @@ A Burger Eatin' Application with Node.js/Express/MySQL2/Sequelize/Handlebars/Boo
 ## Description
 This application demonstrates a simple full stack application with a front end implemented with HTML/CSS and styling from the Bootstrap framework, and the backend implemented using Node.js and Express. The database connection is made using Sequelize. The templating for HTML is accomplished by using Handlebars.
 
-The user is instructed to enter a user name and a burger name, and then click "Submit" to add the burger to the menu list. This user entry also gets added to the mySQL database, thus providing persistent data. The "name" and "burger" fields are required, and are validated in the corresponding sequelize models. The initial burger entry is populated into the "available" column at the left side of the screen. The user may then "eat" any burger by clicking the corresponding "DEVOUR IT button, which populates changes in the database, redirects the view to the initial state, which then reads, sorts, and displays the data according to the stored boolean value in the database. The now "eaten" burger will be displayed in the "devoured" column on the right.
+The user is instructed to enter a user name and a burger name, and then click "Submit" to add the burger to the menu list. This user entry also gets added to the mySQL database, thus providing persistent data. The "name" and "burger" fields are required, and are validated in the corresponding sequelize models. The initial burger entry is populated into the "available" column at the left side of the screen. The user may then "eat" any burger by clicking the corresponding "DEVOUR IT button, which populates changes in the database, redirects the view to the initial state, which then reads, sorts, and displays the data according to the stored boolean value in the database. A input field sits to the left of the "DEVOUR IT" button, which will store a "name" input and associate it with the burger.  The now "eaten" burger will be displayed in the "devoured" column on the right, along with the user name who created the burger, and the user who "DEVOURED IT" if the field was provided.
 ## Demo
-The demo link can be accessed by clicking [here](https://chrisjones-eat-da-burger.herokuapp.com/).
+The demo link can be accessed by clicking [here](https://dashboard.heroku.com/apps/eat-da-burger-sqlize-cj).
 ## Installation
 **Note: you must have mySQL installed in order to run this application.**
 
@@ -17,15 +17,8 @@ Next, navigate to the burger folder and install the application dependencies:
 ```
 npm install
 ```
-Next, populate the connection.js file with your local mySQL setting information:
-```
-const connection = mysql.createConnection({
-    host: yourHost,
-    user: yourUserName,
-    password: yourPassword
-    (you will add a [database: yourDatabase] after setup)
-});
-```
+Next, run ```sequelize init``` from the command line (sequelize-cli must be installed globally ```npm install sequelize-cli -g```):
+
 Then, run the schema.sql file from the command line using your installed mySQL Server. Alternatively, you can copy the commands from the file to run in your mySQL GUI, such as mySQL Workbench.  
 
 Finally, run the node server locally:
