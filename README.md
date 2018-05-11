@@ -19,7 +19,11 @@ npm install
 ```
 Next, run ```sequelize init``` from the command line (sequelize-cli must be installed globally ```npm install sequelize-cli -g```):
 
-Then, run the schema.sql file from the command line using your installed mySQL Server. Alternatively, you can copy the commands from the file to run in your mySQL GUI, such as mySQL Workbench.  
+Then, you will want to create a local database for testing and development. Later you can create a production database using a mySQL database service, such as JawsDB.
+
+Then, you will want to view the config.json file, which will be inside of the config folder that was created after running the "initialize" commmand. You will change the properties and values here for the "development" connection info.
+
+Then, you can create the model and migration files from the command line by running ```model:generate --name burger --attributes burger_name:string,devoured:boolean,createdBy:string,eatenBy:string``` followed by ```model:generate --name customer --attributes name:string,burgers_eaten:string,burgers_created:string``` 
 
 Finally, run the node server locally:
 ```
