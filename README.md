@@ -5,7 +5,7 @@ This application demonstrates a simple full stack application with a front end i
 
 The user is instructed to enter a user name and a burger name, and then click "Submit" to add the burger to the menu list. This user entry also gets added to the mySQL database, thus providing persistent data. The "name" and "burger" fields are required, and are validated in the corresponding sequelize models. The initial burger entry is populated into the "available" column at the left side of the screen. The user may then "eat" any burger by clicking the corresponding "DEVOUR IT button, which populates changes in the database, redirects the view to the initial state, which then reads, sorts, and displays the data according to the stored boolean value in the database. A input field sits to the left of the "DEVOUR IT" button, which will store a "name" input and associate it with the burger.  The now "eaten" burger will be displayed in the "devoured" column on the right, along with the user name who created the burger, and the user who "DEVOURED IT" if the field was provided.
 ## Demo
-The demo link can be accessed by clicking [here](https://dashboard.heroku.com/apps/eat-da-burger-sqlize-cj).
+The demo link can be accessed by clicking [here](https://eat-da-burger-sqlize-cj.herokuapp.com/).
 ## Installation
 **Note: you must have mySQL installed in order to run this application.**
 
